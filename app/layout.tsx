@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { Preloader } from "@/components/Preloader";
 
 const display = Fraunces({
   subsets: ["latin"],
@@ -46,7 +45,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${sans.variable} ${mono.variable}`}>
       <body>
-        <Preloader />
         {children}
       </body>
     </html>
